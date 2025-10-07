@@ -1,4 +1,4 @@
-# StreamFlix (netflix)
+# StreamFlix (Netflix)
 
 StreamFlix — Netflix-style Flutter UI clone.
 
