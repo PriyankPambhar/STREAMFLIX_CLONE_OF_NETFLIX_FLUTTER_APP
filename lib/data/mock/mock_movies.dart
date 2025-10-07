@@ -1,0 +1,87 @@
+import '../../data/tmdb/models/movie.dart';
+
+// Note: Using placeholder images from picsum.photos for the clone-only mode.
+// In a real app, replace with actual poster/backdrop URLs from an API.
+
+const List<Movie> mockMovies = [
+  Movie(
+    id: 1,
+    title: 'The Red Dawn',
+    overview: 'An action-packed thriller set in a dystopian world.',
+    posterPath: 'https://picsum.photos/seed/poster1/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop1/1280/720',
+    voteAverage: 7.8,
+  ),
+  Movie(
+    id: 2,
+    title: 'Midnight Echoes',
+    overview: 'A mysterious tale unraveling in the dead of night.',
+    posterPath: 'https://picsum.photos/seed/poster2/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop2/1280/720',
+    voteAverage: 8.2,
+  ),
+  Movie(
+    id: 3,
+    title: 'Galactic Drift',
+    overview: 'A sci-fi journey across the stars and beyond.',
+    posterPath: 'https://picsum.photos/seed/poster3/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop3/1280/720',
+    voteAverage: 7.4,
+  ),
+  Movie(
+    id: 4,
+    title: 'Silent Harbour',
+    overview: 'A quiet town with dark secrets beneath the surface.',
+    posterPath: 'https://picsum.photos/seed/poster4/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop4/1280/720',
+    voteAverage: 6.9,
+  ),
+  Movie(
+    id: 5,
+    title: 'Neon City',
+    overview: 'Cyberpunk noir in a city that never sleeps.',
+    posterPath: 'https://picsum.photos/seed/poster5/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop5/1280/720',
+    voteAverage: 8.7,
+  ),
+  Movie(
+    id: 6,
+    title: 'Ocean’s Whisper',
+    overview: 'A heartfelt drama by the sea.',
+    posterPath: 'https://picsum.photos/seed/poster6/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop6/1280/720',
+    voteAverage: 7.1,
+  ),
+  Movie(
+    id: 7,
+    title: 'Shadow Circuit',
+    overview: 'High-stakes heist meets cutting-edge tech.',
+    posterPath: 'https://picsum.photos/seed/poster7/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop7/1280/720',
+    voteAverage: 7.9,
+  ),
+  Movie(
+    id: 8,
+    title: 'Autumn Skies',
+    overview: 'A feel-good story set in a small mountain town.',
+    posterPath: 'https://picsum.photos/seed/poster8/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop8/1280/720',
+    voteAverage: 6.8,
+  ),
+  Movie(
+    id: 9,
+    title: 'Crimson Trail',
+    overview: 'A western adventure with a modern twist.',
+    posterPath: 'https://picsum.photos/seed/poster9/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop9/1280/720',
+    voteAverage: 7.3,
+  ),
+  Movie(
+    id: 10,
+    title: 'Quantum Heart',
+    overview: 'Love, time, and the multiverse.',
+    posterPath: 'https://picsum.photos/seed/poster10/300/450',
+    backdropPath: 'https://picsum.photos/seed/backdrop10/1280/720',
+    voteAverage: 8.0,
+  ),
+];
