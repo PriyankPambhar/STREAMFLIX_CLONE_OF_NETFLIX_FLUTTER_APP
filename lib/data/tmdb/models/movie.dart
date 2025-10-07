@@ -5,6 +5,7 @@ class Movie {
   final String? posterPath;
   final String? backdropPath;
   final double voteAverage;
+  final String releaseDate;
 
   const Movie({
     required this.id,
@@ -13,6 +14,7 @@ class Movie {
     required this.posterPath,
     required this.backdropPath,
     required this.voteAverage,
+    required this.releaseDate,
   });
 
   factory Movie.fromJson(Map<String, dynamic> json) {
@@ -23,6 +25,7 @@ class Movie {
       posterPath: json['poster_path'] as String?,
       backdropPath: json['backdrop_path'] as String?,
       voteAverage: (json['vote_average'] as num?)?.toDouble() ?? 0.0,
+      releaseDate: (json['release_date'] ?? '') as String,
     );
   }
 }

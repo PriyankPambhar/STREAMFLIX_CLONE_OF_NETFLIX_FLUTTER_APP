@@ -11,6 +11,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster1/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop1/1280/720',
     voteAverage: 7.8,
+    releaseDate: '2024-03-15',
   ),
   Movie(
     id: 2,
@@ -19,6 +20,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster2/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop2/1280/720',
     voteAverage: 8.2,
+    releaseDate: '2024-02-20',
   ),
   Movie(
     id: 3,
@@ -27,6 +29,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster3/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop3/1280/720',
     voteAverage: 7.4,
+    releaseDate: '2024-01-10',
   ),
   Movie(
     id: 4,
@@ -35,6 +38,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster4/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop4/1280/720',
     voteAverage: 6.9,
+    releaseDate: '2024-04-05',
   ),
   Movie(
     id: 5,
@@ -43,14 +47,16 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster5/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop5/1280/720',
     voteAverage: 8.7,
+    releaseDate: '2023-12-01',
   ),
   Movie(
     id: 6,
-    title: 'Ocean’s Whisper',
+    title: 'Ocean\'s Whisper',
     overview: 'A heartfelt drama by the sea.',
     posterPath: 'https://picsum.photos/seed/poster6/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop6/1280/720',
     voteAverage: 7.1,
+    releaseDate: '2024-05-18',
   ),
   Movie(
     id: 7,
@@ -59,6 +65,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster7/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop7/1280/720',
     voteAverage: 7.9,
+    releaseDate: '2024-06-22',
   ),
   Movie(
     id: 8,
@@ -67,6 +74,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster8/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop8/1280/720',
     voteAverage: 6.8,
+    releaseDate: '2023-11-15',
   ),
   Movie(
     id: 9,
@@ -75,6 +83,7 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster9/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop9/1280/720',
     voteAverage: 7.3,
+    releaseDate: '2024-07-04',
   ),
   Movie(
     id: 10,
@@ -83,5 +92,6 @@ const List<Movie> mockMovies = [
     posterPath: 'https://picsum.photos/seed/poster10/300/450',
     backdropPath: 'https://picsum.photos/seed/backdrop10/1280/720',
     voteAverage: 8.0,
+    releaseDate: '2024-08-30',
   ),
 ];

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../data/tmdb/models/movie.dart';
+import '../../../data/tmdb/tmdb_service.dart';
 
 class MovieThumbnail extends StatefulWidget {
   final Movie movie;
@@ -17,22 +18,26 @@ class _MovieThumbnailState extends State<MovieThumbnail> {
 
   @override
   Widget build(BuildContext context) {
-    final imgUrl = widget.movie.posterPath ?? '';
     return GestureDetector(
       onTap: () => setState(() => _showOverlay = !_showOverlay),
       child: Stack(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: Container(
-              width: widget.width,
-              height: widget.height,
-              color: Colors.grey.shade900,
-              child: imgUrl.isEmpty
-                  ? const Icon(Icons.image_not_supported)
-                  : Image.network(imgUrl, fit: BoxFit.cover),
+          // Movie Poster
+          Container(
+            width: widget.width,
+            height: widget.height,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              image: DecorationImage(
+                image: NetworkImage(
+                  TmdbService.posterUrl(widget.movie.posterPath, width: 300) ?? '',
+                ),
+                fit: BoxFit.cover,
+              ),
             ),
           ),
+
+          // Overlay on tap
           AnimatedOpacity(
             opacity: _showOverlay ? 1 : 0,
             duration: const Duration(milliseconds: 200),
@@ -49,11 +54,35 @@ class _MovieThumbnailState extends State<MovieThumbnail> {
               ),
               padding: const EdgeInsets.all(8),
               alignment: Alignment.bottomLeft,
-              child: Text(
-                widget.movie.title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: const TextStyle(fontWeight: FontWeight.w600),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    widget.movie.title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 12,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Row(
+                    children: [
+                      const Icon(Icons.star, color: Colors.yellow, size: 12),
+                      const SizedBox(width: 2),
+                      Text(
+                        '${widget.movie.voteAverage.toStringAsFixed(1)}',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 10,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),

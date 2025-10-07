@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="60" rx="8" fill="#E50914"/>
+
+  <!-- Stream Text -->
+  <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">STREAM</text>
+
+  <!-- Flix Text -->
+  <text x="95" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">FLIX</text>
+
+  <!-- Play Icon -->
+  <polygon points="155,15 155,45 180,30" fill="white"/>
+
+  <!-- Decorative Elements -->
+  <circle cx="185" cy="15" r="2" fill="white" opacity="0.8"/>
+  <circle cx="185" cy="45" r="2" fill="white" opacity="0.8"/>
+  <circle cx="195" cy="20" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="195" cy="40" r="1.5" fill="white" opacity="0.6"/>
+</svg>
